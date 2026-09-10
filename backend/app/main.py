@@ -11,7 +11,7 @@ app = FastAPI(title="CoopConnect Bharat API", version="0.1.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # tighten this for production
+   allow_origins=["*"],  # TODO: replace with your Railway frontend URL after step 5 below
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
